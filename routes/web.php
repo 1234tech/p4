@@ -12,15 +12,13 @@
 */
 
 #Built-in default view
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FoodController@welcome');
 
 # Add an item
 Route::get('/foods/add', 'FoodController@add');
 
 # Remove an item
-Route::get('/foods/delete', 'FoodController@remove');
+Route::get('/foods/remove', 'FoodController@remove');
 
 #View items that will expire in the next 30 days
 Route::get('/foods/expire', 'FoodController@expire');

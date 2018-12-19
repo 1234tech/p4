@@ -2,10 +2,10 @@
 
 @section('removeForm')
 
-    <p>Remove a grocery item from your pantry.</p>
+    <h2>Remove a grocery item from your pantry.</h2>
 
     <p>* indicates required field</p>
-    <form method="GET" action="/add">
+    <form method="GET" action="/remove">
         {{ csrf_field() }}
         <fieldset class="outsideBorder">
             <fieldset class="insideBorder">

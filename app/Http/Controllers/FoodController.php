@@ -8,6 +8,7 @@ class FoodController extends Controller
 {
     public function add(Request $request)
     {
+/*
         $request->validate([
         'brand_name' => 'required',
         'item_name' => 'required',
@@ -20,11 +21,11 @@ class FoodController extends Controller
             'brand_name' => $validBrand,
             'item_name' => $validItem
         ]);
-
+*/
         return view('foods.add');
     }//end add
 
-    public function delete()
+    public function remove()
     {
         return view('foods.remove');
     }//end delete
@@ -32,6 +33,11 @@ class FoodController extends Controller
     public function expire()
     {
         return view('foods.expire');
-    }
+    }//end expire
+
+    public function welcome()
+    {
+        return view('foods.welcome');
+    }//end welcome
 
 }//end class
