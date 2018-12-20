@@ -16,9 +16,11 @@ class CreateFoodsTable extends Migration
         Schema::create('foods', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('food_name');
-            $table->string('brand_name');
-            $table->date('expiration_date');
+            $table->string('item_name');
+            $table->integer('brand_name');
+            $table->integer('expiration_month');
+            $table->integer('expiration_day');
+            $table->integer('expiration_year');
             $table->integer('quantity');
             $table->string('location');
         });

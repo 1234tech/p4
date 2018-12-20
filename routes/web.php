@@ -16,13 +16,17 @@ Route::get('/', 'FoodController@welcome');
 
 # Add an item
 Route::get('/foods/add', 'FoodController@add');
+Route::post('/foods', 'FoodController@store');
 
 # Remove an item
 Route::get('/foods/remove', 'FoodController@remove');
 
-#View items that will expire in the next 30 days
+#View items that will expire
 Route::get('/foods/expire', 'FoodController@expire');
 
+# Update an item
+Route::get('/foods/update/', 'FoodController@edit');
+Route::put('/foods/update/results', 'FoodController@update');
 
 #Built-in debugger
 Route::get('/debug', function () {

@@ -24,14 +24,20 @@ li ul nav {
     list-style-type: none;
 }
 
-a li ul nav {
-    text-decoration: none;
-}
-
 h1 {
     font-family: Garamond, serif;
 }
 
 div.intro {
     border: solid;
+}
+
+div.alert {
+    background-color: yellow;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    font-weight: bold;
 }

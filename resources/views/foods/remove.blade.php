@@ -5,7 +5,7 @@
     <h2>Remove a grocery item from your pantry.</h2>
 
     <p>* indicates required field</p>
-    <form method="GET" action="/remove">
+    <form method="GET" action="foods/remove">
         {{ csrf_field() }}
         <fieldset class="outsideBorder">
             <fieldset class="insideBorder">
