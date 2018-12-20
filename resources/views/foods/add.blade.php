@@ -101,7 +101,7 @@
 
             </fieldset>
 
-            <input type="submit" value="Submit feedback" name="button">
+            <input type="submit" value="Add item" name="button">
         </fieldset>
     </form>
 

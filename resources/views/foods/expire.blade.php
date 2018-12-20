@@ -9,5 +9,8 @@
     @foreach($expiration2018 as $item)
         {{ $expiration2018 }}
         @endforeach
+    @if(!$item)
+        No foods found.
+    @endif
 
 @endsection

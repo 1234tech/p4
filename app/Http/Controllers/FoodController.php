@@ -58,7 +58,6 @@ class FoodController extends Controller
             ->where('expiration_year', '=', '2018')
             ->get();
 
-        dump($expiration2018);
         return view('foods.expire')->with([
                 'expiration2018' => $expiration2018,
        ]);
